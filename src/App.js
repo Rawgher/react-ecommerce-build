@@ -11,7 +11,7 @@ const App = () => {
       <Route path="/" element={<Navigation />}>
         {/* index means to match the base component, so / would also equate to home */}
         <Route index element={<Home />} />
-        <Route path="shop" element={<Shop />} />
+        <Route path="shop/*" element={<Shop />} />
         <Route path="auth" element={<Authentication />} />
         <Route path="checkout" element={<Checkout />} />
       </Route>
